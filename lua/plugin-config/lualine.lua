@@ -26,10 +26,6 @@ lualine.setup({
 				-- 2: Absolute path
 				-- 3: Absolute path, with tilde as the home directory
 				path = 1,
-        {
-          "lsp_progress",
-          spinner_symbols = { " ", " ", " ", " ", " ", " " },
-        },
 			},
 		},
 		lualine_x = {

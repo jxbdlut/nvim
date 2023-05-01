@@ -151,8 +151,8 @@ local M = {
 		go9 = "<leader>9",
 		prev = "<C-h>",
 		next = "<C-l>",
-		-- close = "<C-w>",
-		close = "<leader>bc",
+		close = "<C-w>",
+		-- close = "<leader>bc",
 		close_left = "<leader>bh",
 		close_right = "<leader>bl",
 		close_others = "<leader>bo",
@@ -252,11 +252,11 @@ local M = {
 		ts_goto_source = "gD",
 	},
 
-    mkdp = {
-        mkdp_open_to_the_world = 1,
-        mkdp_browser = '',
-        mkdp_echo_preview_url = 1,
-    },
+	mkdp = {
+		mkdp_open_to_the_world = 1,
+		mkdp_browser = "",
+		mkdp_echo_preview_url = 1,
+	},
 }
 
 return M

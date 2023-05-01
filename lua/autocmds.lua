@@ -62,16 +62,6 @@ autocmd("BufEnter", {
 	end,
 })
 
-autocmd("BufReadPost", {
-    group = myAutoGroup,
-    pattern = "*",
-    callback = function()
-        -- if vim.line("\"") > 1 and vim.line("\"") <= vim.line("$") then
-        --     vim.api.nvim_command("normal! g\"")
-        -- end
-    end,
-})
-
 -- 保存Fold
 local saveable_type = { "*.lua", "*.js", "*.jsx", "*.ts", "*.tsx" }
 
