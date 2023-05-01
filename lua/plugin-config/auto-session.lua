@@ -5,7 +5,7 @@ if not status then
 end
 
 auto_session.setup({
-	log_level = "debug",
+	log_level = "error",
 	-- 打开这些目录里面的内容时，不加载会话
 	auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/", "/ect", "/usr" },
 	auto_session_enable_last_session = false,
