@@ -45,7 +45,7 @@ require("mason-lspconfig").setup({
 		"rust_analyzer",
 		-- "taplo",
 		"yamlls",
-		"gopls",
+		-- "gopls",
 		"clangd",
 		"cmake",
 	},
@@ -58,12 +58,12 @@ require("mason-lspconfig").setup({
 local servers = {
 	lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
 	bashls = require("lsp.config.bash"),
-    	jsonls = require("lsp.config.json"),
+	jsonls = require("lsp.config.json"),
 	rust_analyzer = require("lsp.config.rust"),
-    	dockerls = require("lsp.config.docker"),
+	dockerls = require("lsp.config.docker"),
 	clangd = require("lsp.config.clangd"),
 	cmake = require("lsp.config.cmake"),
-    	gopls = require("lsp.config.gopls"),
+	-- gopls = require("lsp.config.gopls"),
 }
 
 for name, config in pairs(servers) do
