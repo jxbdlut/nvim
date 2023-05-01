@@ -24,7 +24,8 @@ autocmd("TermOpen", {
 -- 保存时自动格式化
 autocmd("BufWritePre", {
 	group = myAutoGroup,
-	pattern = { "*.lua", "*.h", "*.cpp", "*.sh" },
+	pattern = { "*.lua", "*.h", "*.cpp", "*.sh", "*.c", "*.go", "*.cc" },
+
 	callback = function()
 		vim.lsp.buf.format()
 	end,
@@ -60,16 +61,6 @@ autocmd("BufEnter", {
 			- "o" -- O and o, don't continue comments
 			+ "r" -- But do continue when pressing enter.
 	end,
-})
-
-autocmd("BufReadPost", {
-    group = myAutoGroup,
-    pattern = "*",
-    callback = function()
-        -- if vim.line("\"") > 1 and vim.line("\"") <= vim.line("$") then
-        --     vim.api.nvim_command("normal! g\"")
-        -- end
-    end,
 })
 
 -- 保存Fold
