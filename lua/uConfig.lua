@@ -11,10 +11,10 @@ local M = {
 
 		-- normal 模式
 		n_save = "<leader>w", -- :w
-		n_save_quit = "<leader>wq", --:wq
+		n_save_quit = "<leader>q", --:wq
 		n_save_all = "<leader>wa", -- :wa
 		-- n_save_all_quit = "<leader>qa", -- :wqa
-		n_force_quit = "<leader>q", -- :qa!
+		n_force_quit = "<leader>qa", -- :qa!
 
 		n_v_5j = "<C-j>",
 		n_v_5k = "<C-k>",
